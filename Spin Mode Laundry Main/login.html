@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Mode Laundry Hub</title>
+    <link rel="stylesheet" href="loginStyle.css"/>
+    <script src="login.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <img src="images/logo2.png" id="navbar__logo"/>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__btn">
+                    <a href="#" class="button" id="openLogin">Log In</a>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box">
+            <div class="form-content"></div>
+            <h2>LOGIN</h2>
+            <form id="loginForm">
+                <div class="input-field">
+                    <input type="text" id="empnum" name="empnum" required placeholder=" " pattern="^[a-zA-Z. ]+$" title="Only letters, spaces, and periods are allowed." oninput="this.value = this.value.replace(/[^a-zA-Z. ]/g, '')" required>
+                    <label for="empnum">Username</label>
+                </div>
+                
+                <div class="input-field password-field">
+                    <input type="password" id="password" name="password" required placeholder=" ">
+                    <label for="password">Password</label>
+                    <span class="toggle-password material-symbols-rounded">visibility</span>
+                </div>
+                <button type="submit" class="login-btn">Log In</button>
+            </form>
+            <div id="errorMsg"></div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>SPIN MODE</h1>
+                <h2>LAUNDRY HUB</h2>
+                <p>The right choice to your clothes.</p>
+            </div>
+            <div class="main__img--container">
+                <img src="images/pic1.png" alt="pic" id="main__img">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
